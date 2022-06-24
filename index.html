@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Javascript</title>
+    <script>
+        for (var i = 1; i <= 100; i++) {
+            var firstNum, secondNum, operator, answer;
+            firstNum = parseFloat(prompt("Enter first number"));
+            secondNum = parseFloat(prompt("Enter second number"));
+            operator = prompt("Enter operator", "+ - * /");
+            if (operator == "+") {
+                answer = firstNum + secondNum;
+                window.alert("The answer is " + answer.toString())
+            } else if (operator == "-") {
+                answer = firstNum - secondNum;
+                window.alert("The answer is " + answer.toString())
+            } else if (operator == "*") {
+                answer = firstNum * secondNum;
+                window.alert("The answer is " + answer.toString())
+            } else if (operator == "/") {
+                answer = firstNum / secondNum;
+                window.alert("The answer is " + answer.toString())
+            } else {
+                window.alert("Invalid Operator");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
